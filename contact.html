@@ -7,31 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="Default.css">
     <style>
+        .parallax {
+            background-image: url("exampleimg.png");
+            background-attachment: fixed;
+            width: 100%;
+            z-index: -1;
+            min-height: 200px;
+        }
+        .parallaxTitle {
+            position: relative;
+            margin: auto;
+            text-align: center;
+            top: 50%;
+            font-size: 60px;
+            font-weight: 200;
+            color: white;
+            font: bold;
+        }
+
         input {
             padding: 4px 5px;
-            border: none;
+            border: black;
             border-bottom: 3px solid #4d4cb3;
             width: 300px;
             margin: 2px;
         }
+
         .message {
             width: 500px;
             height: 200px;
         }
+
         .content {
             position: relative;
             margin: auto;
             top: 100px;
-            background-color: #4443bc;
             text-align: center;
             width: 800px;
             height: 400px;
             padding: 50px 100px;
-            border-radius: 30px;
         }
     </style>
 </head>

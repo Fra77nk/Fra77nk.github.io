@@ -8,14 +8,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="Default.css">
     <title>Gilda Houck-Markovits Interpreting</title>
     <style>
+        .parallax {
+            background-image: url("exampleimg.png");
+            background-attachment: fixed;
+            width: 100%;
+            z-index: -1;
+            min-height: 577px;
+        }
+
+        .parallax2 {
+            background-image: url("exampleimg.png");
+            background-attachment: fixed;
+            position: relative;
+            z-index: -1;
+            top: 1000px;
+            min-height: 200px;
+        }
+
+        .pretitle {
+            position: relative;
+            margin: auto;
+            text-align: center;
+            right: 150px;
+            font-style: italic;
+            top: 220px;
+            font-size: 30px;
+            font-weight: 0;
+            color: white;
+        }
+
+        .parallaxTitle {
+            position: relative;
+            margin: auto;
+            text-align: center;
+            top: 220px;
+            font-size: 60px;
+            font-weight: 200;
+            color: white;
+            font: bold;
+        }
+
         .content {
             position: absolute;
             margin: auto;
-            top: 500px;
-            background-color: #cee3e4;
+            top: 650px;
+            background-color: white;
             text-align: center;
             width: 100%;
             height: 400px;
@@ -23,30 +70,75 @@
         }
 
         .contentTitle {
+            text-align: center;
             position: relative;
-            font-size: 30px;
-            text-shadow: 1px 2px black;
-            color: white;
+            font-size: 40px;
+            color: black;
             font: bold;
         }
 
         .section1 {
             position: relative;
             margin: auto;
-            top: 100px;
-            background-color: #4443bc;
+            top: 50px;
             text-align: center;
-            width: 800px;
+            color: rgb(100, 100, 100);
+            width: 80%;
             height: 200px;
             padding: 50px 100px;
-            border-radius: 30px;
+        }
+
+        .section2 {
+
+            right: 0px;
+            position: relative;
+            top: auto;
+            height: 300px;
+        }
+
+        .img1 {
+            left: 50%;
+            width: 50%;
+            height: 40px;
+            float: right;
+        }
+
+        img {
+            width: 100%;
+            position: relative;
+            height: auto;
+            object-fit: contain;
+        }
+
+        #text2 {
+            color: rgb(100, 100, 100);
+            position: relative;
+            top: 50%;
+            margin: 5%;
+            max-width: 45%;
+            text-align: left;
+            animation-name: fadeUp;
+            animation-duration: 2s;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 50%;
+                top: 60%;
+            }
+
+            to {
+                opacity: 100%;
+                top: 50%;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="parallax">
-        <div class="parallaxTitle">Gilda Houck-Markovits</div>
+        <div class="pretitle">welcome to</div>
+        <div class="parallaxTitle">GHM Interpreting</div>
     </div>
     <div class="topnav" id="navbar">
         <a class="active" href="#home">Home</a>
@@ -58,18 +150,41 @@
     <div class="content">
 
         <div class="section1">
-            ::before
-            <div class="contentTitle">
-                Gilda Houck-Markovits Interpreting
+            <div class="floattext" id="text1">
+                <div class="contentTitle">
+                    Gilda Houck-Markovits Interpreting
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis molestias vero, nostrum
+                    blanditiis
+                    labore deleniti natus aliquam aut, tempore, assumenda quas debitis dicta voluptate porro dignissimos
+                    culpa provident quisquam earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                    culpa
+                    adipisci dicta necessitatibus, exercitationem cum impedit ex a laudantium atque ipsum ducimus
+                    explicabo
+                    quidem sint quibusdam ipsam, ullam aliquid nulla.</p>
             </div>
-            ::after
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, dolore recusandae vel nostrum ex
-                distinctio dolores, vitae fugiat adipisci blanditiis eius facere tenetur nam animi quam, ab placeat
-                nobis repellendus.</p>
+        </div>
+        <div class="section2">
+            <div class="img1">
+                <img src="exampleimg2.jpg" alt="">
+            </div>
+            <div class="floattext" id="text2">
+                <div class="contentTitle">
+                    My Mission
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis molestias vero, nostrum
+                    blanditiis
+                    labore deleniti natus aliquam aut, tempore, assumenda quas debitis dicta voluptate porro dignissimos
+                    culpa provident quisquam earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                    culpa
+                    adipisci dicta necessitatibus, exercitationem cum impedit ex a laudantium atque ipsum ducimus
+                    explicabo
+                    quidem sint quibusdam ipsam, ullam aliquid nulla.</p>
+            </div>
         </div>
     </div>
+    <div class="parallax2"></div>
 
-   
 </body>
 
 </html>

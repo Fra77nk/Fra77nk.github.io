@@ -1,19 +1,4 @@
-.parallax {
-    background-image: url("exampleimg.png");
-    background-attachment: fixed;
-    z-index: -1;
-    min-height: 400px;
-}
 
-
-.parallaxTitle {
-    position: relative;
-    top: 320px;
-    font-size: 60px;
-    text-shadow: 1px 2px black;
-    color: white;
-    font: bold;
-}
 
 #navbar {
     top: 0;
@@ -55,8 +40,8 @@
 
 body {
     top: 250px;
-    font-family: "Zen Kurenaido";
-    background-color: #cee3e4;
+    font-family: "Barlow Semi Condensed", "sans-serif";
+    background-color: white;
     height: 2000px;
     margin: 0;
 }
